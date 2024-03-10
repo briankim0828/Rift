@@ -1,0 +1,600 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9C1CFE412B9D361B00F46923 /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = 9C1CFE402B9D361B00F46923 /* RealityKitContent */; };
+		9C1CFE432B9D361B00F46923 /* RiftApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1CFE422B9D361B00F46923 /* RiftApp.swift */; };
+		9C1CFE472B9D361E00F46923 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C1CFE462B9D361E00F46923 /* Assets.xcassets */; };
+		9C1CFE4A2B9D361E00F46923 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C1CFE492B9D361E00F46923 /* Preview Assets.xcassets */; };
+		9C1CFE552B9D361E00F46923 /* RiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1CFE542B9D361E00F46923 /* RiftTests.swift */; };
+		9C1CFE5F2B9D36AD00F46923 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1CFE5E2B9D36AD00F46923 /* Constants.swift */; };
+		9C1CFE622B9D373300F46923 /* MatrixMathUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1CFE612B9D373300F46923 /* MatrixMathUtil.swift */; };
+		9C1CFE672B9D37F500F46923 /* VisionSceneRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1CFE642B9D37F500F46923 /* VisionSceneRenderer.swift */; };
+		9C1CFE682B9D37F500F46923 /* ContentStageConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1CFE652B9D37F500F46923 /* ContentStageConfiguration.swift */; };
+		9C1CFE692B9D37F500F46923 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1CFE662B9D37F500F46923 /* ContentView.swift */; };
+		9C1CFE702B9D386B00F46923 /* ModelIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1CFE6B2B9D386B00F46923 /* ModelIdentifier.swift */; };
+		9C1CFE712B9D386B00F46923 /* ModelRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1CFE6C2B9D386B00F46923 /* ModelRenderer.swift */; };
+		9C1CFE722B9D386B00F46923 /* SampleBoxRenderer+ModelRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1CFE6D2B9D386B00F46923 /* SampleBoxRenderer+ModelRenderer.swift */; };
+		9C1CFE732B9D386B00F46923 /* SplatRenderer+ModelRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1CFE6E2B9D386B00F46923 /* SplatRenderer+ModelRenderer.swift */; };
+		9C1CFE762B9D38C600F46923 /* MetalSplatter in Frameworks */ = {isa = PBXBuildFile; productRef = 9C1CFE752B9D38C600F46923 /* MetalSplatter */; };
+		9C1CFE782B9D38C600F46923 /* PLYIO in Frameworks */ = {isa = PBXBuildFile; productRef = 9C1CFE772B9D38C600F46923 /* PLYIO */; };
+		9C1CFE7A2B9D38C600F46923 /* SampleBoxRenderer in Frameworks */ = {isa = PBXBuildFile; productRef = 9C1CFE792B9D38C600F46923 /* SampleBoxRenderer */; };
+		9C1CFE7C2B9D38C600F46923 /* SplatIO in Frameworks */ = {isa = PBXBuildFile; productRef = 9C1CFE7B2B9D38C600F46923 /* SplatIO */; };
+		9C363B032B9D92A900FDC6E2 /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C363B022B9D92A900FDC6E2 /* VideoView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9C1CFE512B9D361E00F46923 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9C1CFE332B9D361B00F46923 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9C1CFE3A2B9D361B00F46923;
+			remoteInfo = Rift;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9C1CFE3B2B9D361B00F46923 /* Rift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C1CFE3F2B9D361B00F46923 /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
+		9C1CFE422B9D361B00F46923 /* RiftApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiftApp.swift; sourceTree = "<group>"; };
+		9C1CFE462B9D361E00F46923 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9C1CFE492B9D361E00F46923 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9C1CFE4B2B9D361E00F46923 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C1CFE502B9D361E00F46923 /* RiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C1CFE542B9D361E00F46923 /* RiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiftTests.swift; sourceTree = "<group>"; };
+		9C1CFE5E2B9D36AD00F46923 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		9C1CFE612B9D373300F46923 /* MatrixMathUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixMathUtil.swift; sourceTree = "<group>"; };
+		9C1CFE642B9D37F500F46923 /* VisionSceneRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisionSceneRenderer.swift; sourceTree = "<group>"; };
+		9C1CFE652B9D37F500F46923 /* ContentStageConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentStageConfiguration.swift; sourceTree = "<group>"; };
+		9C1CFE662B9D37F500F46923 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9C1CFE6B2B9D386B00F46923 /* ModelIdentifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelIdentifier.swift; sourceTree = "<group>"; };
+		9C1CFE6C2B9D386B00F46923 /* ModelRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelRenderer.swift; sourceTree = "<group>"; };
+		9C1CFE6D2B9D386B00F46923 /* SampleBoxRenderer+ModelRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SampleBoxRenderer+ModelRenderer.swift"; sourceTree = "<group>"; };
+		9C1CFE6E2B9D386B00F46923 /* SplatRenderer+ModelRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SplatRenderer+ModelRenderer.swift"; sourceTree = "<group>"; };
+		9C363B022B9D92A900FDC6E2 /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9C1CFE382B9D361B00F46923 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C1CFE782B9D38C600F46923 /* PLYIO in Frameworks */,
+				9C1CFE7C2B9D38C600F46923 /* SplatIO in Frameworks */,
+				9C1CFE412B9D361B00F46923 /* RealityKitContent in Frameworks */,
+				9C1CFE762B9D38C600F46923 /* MetalSplatter in Frameworks */,
+				9C1CFE7A2B9D38C600F46923 /* SampleBoxRenderer in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C1CFE4D2B9D361E00F46923 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9C1CFE322B9D361B00F46923 = {
+			isa = PBXGroup;
+			children = (
+				9C1CFE3D2B9D361B00F46923 /* Rift */,
+				9C1CFE3E2B9D361B00F46923 /* Packages */,
+				9C1CFE532B9D361E00F46923 /* RiftTests */,
+				9C1CFE3C2B9D361B00F46923 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9C1CFE3C2B9D361B00F46923 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9C1CFE3B2B9D361B00F46923 /* Rift.app */,
+				9C1CFE502B9D361E00F46923 /* RiftTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9C1CFE3D2B9D361B00F46923 /* Rift */ = {
+			isa = PBXGroup;
+			children = (
+				9C1CFE6F2B9D386B00F46923 /* Model */,
+				9C1CFE632B9D375500F46923 /* Util */,
+				9C1CFE602B9D36F600F46923 /* App */,
+				9C1CFE462B9D361E00F46923 /* Assets.xcassets */,
+				9C1CFE6A2B9D37FD00F46923 /* Scene */,
+				9C1CFE4B2B9D361E00F46923 /* Info.plist */,
+				9C1CFE482B9D361E00F46923 /* Preview Content */,
+			);
+			path = Rift;
+			sourceTree = "<group>";
+		};
+		9C1CFE3E2B9D361B00F46923 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				9C1CFE3F2B9D361B00F46923 /* RealityKitContent */,
+			);
+			path = Packages;
+			sourceTree = "<group>";
+		};
+		9C1CFE482B9D361E00F46923 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				9C1CFE492B9D361E00F46923 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9C1CFE532B9D361E00F46923 /* RiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				9C1CFE542B9D361E00F46923 /* RiftTests.swift */,
+			);
+			path = RiftTests;
+			sourceTree = "<group>";
+		};
+		9C1CFE602B9D36F600F46923 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				9C1CFE5E2B9D36AD00F46923 /* Constants.swift */,
+				9C1CFE422B9D361B00F46923 /* RiftApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		9C1CFE632B9D375500F46923 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				9C1CFE612B9D373300F46923 /* MatrixMathUtil.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		9C1CFE6A2B9D37FD00F46923 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				9C1CFE652B9D37F500F46923 /* ContentStageConfiguration.swift */,
+				9C1CFE662B9D37F500F46923 /* ContentView.swift */,
+				9C1CFE642B9D37F500F46923 /* VisionSceneRenderer.swift */,
+				9C363B022B9D92A900FDC6E2 /* VideoView.swift */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		9C1CFE6F2B9D386B00F46923 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9C1CFE6B2B9D386B00F46923 /* ModelIdentifier.swift */,
+				9C1CFE6C2B9D386B00F46923 /* ModelRenderer.swift */,
+				9C1CFE6D2B9D386B00F46923 /* SampleBoxRenderer+ModelRenderer.swift */,
+				9C1CFE6E2B9D386B00F46923 /* SplatRenderer+ModelRenderer.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9C1CFE3A2B9D361B00F46923 /* Rift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C1CFE582B9D361E00F46923 /* Build configuration list for PBXNativeTarget "Rift" */;
+			buildPhases = (
+				9C1CFE372B9D361B00F46923 /* Sources */,
+				9C1CFE382B9D361B00F46923 /* Frameworks */,
+				9C1CFE392B9D361B00F46923 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Rift;
+			packageProductDependencies = (
+				9C1CFE402B9D361B00F46923 /* RealityKitContent */,
+				9C1CFE752B9D38C600F46923 /* MetalSplatter */,
+				9C1CFE772B9D38C600F46923 /* PLYIO */,
+				9C1CFE792B9D38C600F46923 /* SampleBoxRenderer */,
+				9C1CFE7B2B9D38C600F46923 /* SplatIO */,
+			);
+			productName = Rift;
+			productReference = 9C1CFE3B2B9D361B00F46923 /* Rift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9C1CFE4F2B9D361E00F46923 /* RiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C1CFE5B2B9D361E00F46923 /* Build configuration list for PBXNativeTarget "RiftTests" */;
+			buildPhases = (
+				9C1CFE4C2B9D361E00F46923 /* Sources */,
+				9C1CFE4D2B9D361E00F46923 /* Frameworks */,
+				9C1CFE4E2B9D361E00F46923 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9C1CFE522B9D361E00F46923 /* PBXTargetDependency */,
+			);
+			name = RiftTests;
+			productName = RiftTests;
+			productReference = 9C1CFE502B9D361E00F46923 /* RiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9C1CFE332B9D361B00F46923 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					9C1CFE3A2B9D361B00F46923 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					9C1CFE4F2B9D361E00F46923 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 9C1CFE3A2B9D361B00F46923;
+					};
+				};
+			};
+			buildConfigurationList = 9C1CFE362B9D361B00F46923 /* Build configuration list for PBXProject "Rift" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9C1CFE322B9D361B00F46923;
+			packageReferences = (
+				9C1CFE742B9D38C600F46923 /* XCLocalSwiftPackageReference "../../MetalSplatter" */,
+			);
+			productRefGroup = 9C1CFE3C2B9D361B00F46923 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9C1CFE3A2B9D361B00F46923 /* Rift */,
+				9C1CFE4F2B9D361E00F46923 /* RiftTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9C1CFE392B9D361B00F46923 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C1CFE4A2B9D361E00F46923 /* Preview Assets.xcassets in Resources */,
+				9C1CFE472B9D361E00F46923 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C1CFE4E2B9D361E00F46923 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9C1CFE372B9D361B00F46923 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C1CFE622B9D373300F46923 /* MatrixMathUtil.swift in Sources */,
+				9C1CFE672B9D37F500F46923 /* VisionSceneRenderer.swift in Sources */,
+				9C1CFE732B9D386B00F46923 /* SplatRenderer+ModelRenderer.swift in Sources */,
+				9C1CFE702B9D386B00F46923 /* ModelIdentifier.swift in Sources */,
+				9C1CFE692B9D37F500F46923 /* ContentView.swift in Sources */,
+				9C1CFE722B9D386B00F46923 /* SampleBoxRenderer+ModelRenderer.swift in Sources */,
+				9C1CFE432B9D361B00F46923 /* RiftApp.swift in Sources */,
+				9C1CFE682B9D37F500F46923 /* ContentStageConfiguration.swift in Sources */,
+				9C1CFE712B9D386B00F46923 /* ModelRenderer.swift in Sources */,
+				9C363B032B9D92A900FDC6E2 /* VideoView.swift in Sources */,
+				9C1CFE5F2B9D36AD00F46923 /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C1CFE4C2B9D361E00F46923 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C1CFE552B9D361E00F46923 /* RiftTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9C1CFE522B9D361E00F46923 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9C1CFE3A2B9D361B00F46923 /* Rift */;
+			targetProxy = 9C1CFE512B9D361E00F46923 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		9C1CFE562B9D361E00F46923 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = xros;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				XROS_DEPLOYMENT_TARGET = 1.1;
+			};
+			name = Debug;
+		};
+		9C1CFE572B9D361E00F46923 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = xros;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+				XROS_DEPLOYMENT_TARGET = 1.1;
+			};
+			name = Release;
+		};
+		9C1CFE592B9D361E00F46923 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Rift/Preview Content\"";
+				DEVELOPMENT_TEAM = RY9HVKJ76B;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = JBKim.Rift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+			};
+			name = Debug;
+		};
+		9C1CFE5A2B9D361E00F46923 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Rift/Preview Content\"";
+				DEVELOPMENT_TEAM = RY9HVKJ76B;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = JBKim.Rift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+			};
+			name = Release;
+		};
+		9C1CFE5C2B9D361E00F46923 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RY9HVKJ76B;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = JBKim.RiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rift.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Rift";
+				XROS_DEPLOYMENT_TARGET = 1.1;
+			};
+			name = Debug;
+		};
+		9C1CFE5D2B9D361E00F46923 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RY9HVKJ76B;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = JBKim.RiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rift.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Rift";
+				XROS_DEPLOYMENT_TARGET = 1.1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9C1CFE362B9D361B00F46923 /* Build configuration list for PBXProject "Rift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C1CFE562B9D361E00F46923 /* Debug */,
+				9C1CFE572B9D361E00F46923 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9C1CFE582B9D361E00F46923 /* Build configuration list for PBXNativeTarget "Rift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C1CFE592B9D361E00F46923 /* Debug */,
+				9C1CFE5A2B9D361E00F46923 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9C1CFE5B2B9D361E00F46923 /* Build configuration list for PBXNativeTarget "RiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C1CFE5C2B9D361E00F46923 /* Debug */,
+				9C1CFE5D2B9D361E00F46923 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		9C1CFE742B9D38C600F46923 /* XCLocalSwiftPackageReference "../../MetalSplatter" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../../MetalSplatter;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9C1CFE402B9D361B00F46923 /* RealityKitContent */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = RealityKitContent;
+		};
+		9C1CFE752B9D38C600F46923 /* MetalSplatter */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MetalSplatter;
+		};
+		9C1CFE772B9D38C600F46923 /* PLYIO */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = PLYIO;
+		};
+		9C1CFE792B9D38C600F46923 /* SampleBoxRenderer */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SampleBoxRenderer;
+		};
+		9C1CFE7B2B9D38C600F46923 /* SplatIO */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SplatIO;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 9C1CFE332B9D361B00F46923 /* Project object */;
+}
