@@ -2,9 +2,16 @@ import SwiftUI
 import RealityKit
 import UniformTypeIdentifiers
 import AVKit
+import os
 
 struct ContentView: View {
+    
+    private var video = VideoLibrary().videos[0]
+        
+    //initialize video player model
+    @Environment(PlayerModel.self) private var player
     private let videoURL = URL(string: "file:///Users/brianjskim/Desktop/Screenshot : recording/CMU_1팀_52Habits.mp4")!
+        
     @State private var isPickingFile = false
 
 #if os(macOS)
@@ -37,7 +44,26 @@ struct ContentView: View {
 
     var body: some View {
 #if os(macOS) || os(visionOS)
-        mainView
+        Group {
+            switch player.presentation {
+            case .fullWindow:
+                // Present the player full window and begin playback.
+                PlayerView()
+                    .onAppear {
+                        print("PlayerViewAppeared")
+                        player.play()
+                    }
+            default:
+                // Show the app's content library by default.
+                mainView
+                    .onAppear {
+                        print("mainViewAppeared")
+                    }
+            }
+        }
+        .onAppear {
+            print("ContentViewAppeared")
+        }
 #elseif os(iOS)
         NavigationStack(path: $navigationPath) {
             mainView
@@ -55,14 +81,17 @@ struct ContentView: View {
             Spacer()
 
             Text("Rift V1")
+                .font(.largeTitle)
+                .foregroundStyle(.black)
 
             Spacer()
 
             Button("Read PLY") {
                 isPickingFile = true
             }
-            .padding()
             .buttonStyle(.borderedProminent)
+            .tint(.black.opacity(0.6))
+            .padding()
             .disabled(isPickingFile)
 #if os(visionOS)
             .disabled(immersiveSpaceIsShown)
@@ -89,8 +118,9 @@ struct ContentView: View {
             Button("Show Sample Box") {
                 openWindow(value: ModelIdentifier.sampleBox)
             }
-            .padding()
             .buttonStyle(.borderedProminent)
+            .tint(.black.opacity(0.6))
+            .padding()
 #if os(visionOS)
             .disabled(immersiveSpaceIsShown)
 #endif
@@ -105,21 +135,34 @@ struct ContentView: View {
                 }
             }
             .disabled(!immersiveSpaceIsShown)
-
+            .buttonStyle(.borderedProminent)
+            .tint(.black.opacity(0.6))
+            
             Spacer()
             
-            Button("Play Video") {
-                            // Present the video player
-                            let playerViewController = AVPlayerViewController()
-                            let player = AVPlayer(url: videoURL)
-                            playerViewController.player = player
-                            
-                            // To present full-screen in SwiftUI, use a UIViewControllerRepresentable or leverage .fullScreenCover
-                            let window = UIApplication.shared.windows.first
-                            window?.rootViewController?.present(playerViewController, animated: true, completion: {
-                                player.play()
-                            })
-                        }
+            Button {
+//                            // Present the video player
+//                            let playerViewController = AVPlayerViewController()
+//                            let player = AVPlayer(url: videoURL)
+//                            playerViewController.player = player
+//                            
+//                            // To present full-screen in SwiftUI, use a UIViewControllerRepresentable or leverage .fullScreenCover
+//                            let window = UIApplication.shared.windows.first
+//                            window?.rootViewController?.present(playerViewController, animated: true, completion: {
+//                                player.play()
+//                            })
+                
+                print("play button pressed")
+                print(video.url)
+                player.loadVideo(video, presentation: .fullWindow)
+                print("buttontask over")
+            } label: {
+                Label("Play Video", systemImage: "play.fill")
+                    .frame(maxWidth: .infinity)
+            }
+            .buttonStyle(.borderedProminent)
+            .tint(.black.opacity(0.6))
+            
 #endif // os(visionOS)
         }
     }

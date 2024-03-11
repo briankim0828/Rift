@@ -25,7 +25,13 @@
 		9C1CFE782B9D38C600F46923 /* PLYIO in Frameworks */ = {isa = PBXBuildFile; productRef = 9C1CFE772B9D38C600F46923 /* PLYIO */; };
 		9C1CFE7A2B9D38C600F46923 /* SampleBoxRenderer in Frameworks */ = {isa = PBXBuildFile; productRef = 9C1CFE792B9D38C600F46923 /* SampleBoxRenderer */; };
 		9C1CFE7C2B9D38C600F46923 /* SplatIO in Frameworks */ = {isa = PBXBuildFile; productRef = 9C1CFE7B2B9D38C600F46923 /* SplatIO */; };
-		9C363B032B9D92A900FDC6E2 /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C363B022B9D92A900FDC6E2 /* VideoView.swift */; };
+		9C363B032B9D92A900FDC6E2 /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C363B022B9D92A900FDC6E2 /* VideoPlayerView.swift */; };
+		9C363B052B9E2E8A00FDC6E2 /* PlayerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C363B042B9E2E8A00FDC6E2 /* PlayerModel.swift */; };
+		9C363B072B9E312900FDC6E2 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C363B062B9E312900FDC6E2 /* PlayerView.swift */; };
+		9C363B092B9E3A2500FDC6E2 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C363B082B9E3A2500FDC6E2 /* Video.swift */; };
+		9C363B0B2B9E3ED500FDC6E2 /* VideoLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C363B0A2B9E3ED500FDC6E2 /* VideoLibrary.swift */; };
+		9C363B0D2B9E3FD700FDC6E2 /* Videos.json in Resources */ = {isa = PBXBuildFile; fileRef = 9C363B0C2B9E3FD700FDC6E2 /* Videos.json */; };
+		9C363B102B9E68FE00FDC6E2 /* test.MOV in Resources */ = {isa = PBXBuildFile; fileRef = 9C363B0F2B9E68FE00FDC6E2 /* test.MOV */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,7 +62,13 @@
 		9C1CFE6C2B9D386B00F46923 /* ModelRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelRenderer.swift; sourceTree = "<group>"; };
 		9C1CFE6D2B9D386B00F46923 /* SampleBoxRenderer+ModelRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SampleBoxRenderer+ModelRenderer.swift"; sourceTree = "<group>"; };
 		9C1CFE6E2B9D386B00F46923 /* SplatRenderer+ModelRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SplatRenderer+ModelRenderer.swift"; sourceTree = "<group>"; };
-		9C363B022B9D92A900FDC6E2 /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
+		9C363B022B9D92A900FDC6E2 /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
+		9C363B042B9E2E8A00FDC6E2 /* PlayerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerModel.swift; sourceTree = "<group>"; };
+		9C363B062B9E312900FDC6E2 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
+		9C363B082B9E3A2500FDC6E2 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		9C363B0A2B9E3ED500FDC6E2 /* VideoLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoLibrary.swift; sourceTree = "<group>"; };
+		9C363B0C2B9E3FD700FDC6E2 /* Videos.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Videos.json; sourceTree = "<group>"; };
+		9C363B0F2B9E68FE00FDC6E2 /* test.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = test.MOV; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,13 +116,16 @@
 		9C1CFE3D2B9D361B00F46923 /* Rift */ = {
 			isa = PBXGroup;
 			children = (
+				9C1CFE602B9D36F600F46923 /* App */,
+				9C1CFE6A2B9D37FD00F46923 /* Scene */,
+				9C363B0E2B9E59CF00FDC6E2 /* Video */,
 				9C1CFE6F2B9D386B00F46923 /* Model */,
 				9C1CFE632B9D375500F46923 /* Util */,
-				9C1CFE602B9D36F600F46923 /* App */,
 				9C1CFE462B9D361E00F46923 /* Assets.xcassets */,
-				9C1CFE6A2B9D37FD00F46923 /* Scene */,
 				9C1CFE4B2B9D361E00F46923 /* Info.plist */,
 				9C1CFE482B9D361E00F46923 /* Preview Content */,
+				9C363B042B9E2E8A00FDC6E2 /* PlayerModel.swift */,
+				9C363B062B9E312900FDC6E2 /* PlayerView.swift */,
 			);
 			path = Rift;
 			sourceTree = "<group>";
@@ -142,8 +157,8 @@
 		9C1CFE602B9D36F600F46923 /* App */ = {
 			isa = PBXGroup;
 			children = (
-				9C1CFE5E2B9D36AD00F46923 /* Constants.swift */,
 				9C1CFE422B9D361B00F46923 /* RiftApp.swift */,
+				9C1CFE5E2B9D36AD00F46923 /* Constants.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -162,7 +177,7 @@
 				9C1CFE652B9D37F500F46923 /* ContentStageConfiguration.swift */,
 				9C1CFE662B9D37F500F46923 /* ContentView.swift */,
 				9C1CFE642B9D37F500F46923 /* VisionSceneRenderer.swift */,
-				9C363B022B9D92A900FDC6E2 /* VideoView.swift */,
+				9C363B022B9D92A900FDC6E2 /* VideoPlayerView.swift */,
 			);
 			path = Scene;
 			sourceTree = "<group>";
@@ -176,6 +191,17 @@
 				9C1CFE6E2B9D386B00F46923 /* SplatRenderer+ModelRenderer.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		9C363B0E2B9E59CF00FDC6E2 /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				9C363B082B9E3A2500FDC6E2 /* Video.swift */,
+				9C363B0A2B9E3ED500FDC6E2 /* VideoLibrary.swift */,
+				9C363B0C2B9E3FD700FDC6E2 /* Videos.json */,
+				9C363B0F2B9E68FE00FDC6E2 /* test.MOV */,
+			);
+			path = Video;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,7 +296,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C1CFE4A2B9D361E00F46923 /* Preview Assets.xcassets in Resources */,
+				9C363B0D2B9E3FD700FDC6E2 /* Videos.json in Resources */,
 				9C1CFE472B9D361E00F46923 /* Assets.xcassets in Resources */,
+				9C363B102B9E68FE00FDC6E2 /* test.MOV in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,11 +321,15 @@
 				9C1CFE732B9D386B00F46923 /* SplatRenderer+ModelRenderer.swift in Sources */,
 				9C1CFE702B9D386B00F46923 /* ModelIdentifier.swift in Sources */,
 				9C1CFE692B9D37F500F46923 /* ContentView.swift in Sources */,
+				9C363B092B9E3A2500FDC6E2 /* Video.swift in Sources */,
+				9C363B0B2B9E3ED500FDC6E2 /* VideoLibrary.swift in Sources */,
 				9C1CFE722B9D386B00F46923 /* SampleBoxRenderer+ModelRenderer.swift in Sources */,
+				9C363B052B9E2E8A00FDC6E2 /* PlayerModel.swift in Sources */,
+				9C363B072B9E312900FDC6E2 /* PlayerView.swift in Sources */,
 				9C1CFE432B9D361B00F46923 /* RiftApp.swift in Sources */,
 				9C1CFE682B9D37F500F46923 /* ContentStageConfiguration.swift in Sources */,
 				9C1CFE712B9D386B00F46923 /* ModelRenderer.swift in Sources */,
-				9C363B032B9D92A900FDC6E2 /* VideoView.swift in Sources */,
+				9C363B032B9D92A900FDC6E2 /* VideoPlayerView.swift in Sources */,
 				9C1CFE5F2B9D36AD00F46923 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

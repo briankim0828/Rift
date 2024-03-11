@@ -9,12 +9,17 @@
 import CompositorServices
 #endif
 import SwiftUI
+import os
 
 @main
 struct RiftApp: App {
+    
     var body: some Scene {
-        WindowGroup("MetalSplatter Sample App", id: "main") {
+        WindowGroup("Rift Sample App", id: "main") {
             ContentView()
+                .environment(PlayerModel())
+                .environment(VideoLibrary())
+                .background(Color.white.opacity(0.33))
         }
 
 #if os(macOS)
@@ -41,4 +46,5 @@ struct RiftApp: App {
     }
 }
 
+let logger = Logger()
 
