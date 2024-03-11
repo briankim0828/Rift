@@ -1,14 +1,15 @@
 [
     {
+        "fileName": "walkthrough.MOV",
         "id": 1,
-        "url": "file:///Users/brianjskim/Desktop/Screenshot : recording/CMU_1팀_52Habits.mp4",
+        "url": "a",
         "is3D": false,
-        "title": "A Beach",
+        "title": "HCILab Walkthrough",
         "imageName": "beach",
-        "description": "From an award-winning producer and actor, \"A Beach\" is a sweeping, awe-inspiring drama depicting waves crashing on a scenic California beach. Sit back and enjoy the sweet sounds of the ocean while relaxing on a soft, sandy beach.",
+        "description": "Walking through the lab in my Apple Vision Pro. Possible first uploaded spatial video contender.",
         "destination": "beach",
         "info": {
-            "releaseYear": "2023",
+            "releaseYear": "2024",
             "contentRating": "NR",
             "duration": "1m 1s",
             "genres": ["Drama","Romance"],
@@ -18,12 +19,13 @@
         }
     },
     {
+        "fileName": "mannequin.MOV",
         "id": 2,
-        "url": "http://playgrounds-cdn.apple.com/assets/lake/index.m3u8",
+        "url": "a",
         "is3D": false,
-        "title": "By the Lake",
+        "title": "Mannequin with a Guitar",
         "imageName": "lake",
-        "description": "The battle for the sunniest spot continues, as a group of turtles take their positions on the log. Find out who the last survivor is, and who must swim away cold.",
+        "description": "One of the projects at the HCI lab, interesting gadgets all around this mannequin",
         "destination": "lake",
         "info": {
             "releaseYear": "2023",
@@ -36,12 +38,13 @@
         }
     },
     {
+        "fileName": "sitting.MOV",
         "id": 3,
         "url": "http://playgrounds-cdn.apple.com/assets/camping/index.m3u8",
         "is3D": false,
-        "title": "Camping in the Woods",
+        "title": "Hackathon Squad",
         "imageName": "camping",
-        "description": "Come along for a journey of epic proportion as the perfect camp site is discovered. Listen to the magical wildlife and feel the gentle breeze of the wind as you watch the daisies dance in the field of flowers.",
+        "description": "Sitting in front of Andy, Minjun, and Ezra. Filmed by Brian. 2:30 AM at HCI Lab, March 11th 2024.",
         "destination": "camping",
         "info": {
             "releaseYear": "2023",
@@ -54,6 +57,7 @@
         }
     },
     {
+        "fileName": "walkthrough.MOV",
         "id": 4,
         "url": "http://playgrounds-cdn.apple.com/assets/park/index.m3u8",
         "is3D": false,
@@ -72,6 +76,7 @@
         }
     },
     {
+        "fileName": "sitting.MOV",
         "id": 5,
         "url": "http://playgrounds-cdn.apple.com/assets/creek/index.m3u8",
         "is3D": false,
@@ -90,6 +95,7 @@
         }
     },
     {
+        "fileName": "mannequin.MOV",
         "id": 6,
         "url": "http://playgrounds-cdn.apple.com/assets/hillside/index.m3u8",
         "is3D": false,
@@ -108,6 +114,7 @@
         }
     },
     {
+        "fileName": "walkthrough.MOV",
         "id": 7,
         "url": "http://playgrounds-cdn.apple.com/assets/ocean/index.m3u8",
         "is3D": false,

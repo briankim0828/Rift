@@ -19,19 +19,21 @@ enum PlayerControlsStyle {
 struct PlayerView: View {
     
     let controlsStyle: PlayerControlsStyle
+    let video: Video
     @State private var showContextualActions = false
     @Environment(PlayerModel.self) private var model
     
     /// Creates a new player view.
-    init(controlsStyle: PlayerControlsStyle = .system) {
+    init(video : Video, controlsStyle: PlayerControlsStyle = .system) {
         print("initializing PlayerView")
+        self.video = video
         self.controlsStyle = controlsStyle
     }
     
     var body: some View {
         switch controlsStyle {
         case .system:
-            VideoPlayerView(showContextualActions: showContextualActions)
+            VideoPlayerView(video: video, showContextualActions: showContextualActions)
                 .onAppear{
                     print("VideoPlayerViewAppeared")
                 }

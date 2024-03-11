@@ -207,14 +207,17 @@ enum Presentation {
     
     /// Clears any loaded media and resets the player model to its default state.
     func reset() {
-        currentItem = nil
-        player.replaceCurrentItem(with: nil)
+        print("calling reset")
         playerViewController = nil
         playerViewControllerDelegate = nil
         // Reset the presentation state on the next cycle of the run loop.
-        Task { @MainActor in
-            presentation = .inline
-        }
+//        Task { @MainActor in
+//            print("changing presentation")
+//            self.presentation = .inline
+//        }
+        self.presentation = .inline
+        currentItem = nil
+        player.replaceCurrentItem(with: nil)
     }
     
     /// Creates metadata items from the video items data.

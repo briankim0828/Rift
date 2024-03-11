@@ -46,9 +46,11 @@ struct VideoPlayerView: UIViewControllerRepresentable {
     @Environment(VideoLibrary.self) private var library
     
     let showContextualActions: Bool
+    let video: Video
     
-    init(showContextualActions: Bool) {
+    init(video: Video, showContextualActions: Bool) {
         print("initializing VideoPlayerView")
+        self.video = video
         self.showContextualActions = showContextualActions
     }
     
@@ -59,9 +61,9 @@ struct VideoPlayerView: UIViewControllerRepresentable {
         
         // Create a player view controller.
 //        let controller = model.makePlayerViewController(videoURL: library.videos[0].url)
-        
-        guard let url = Bundle.main.url(forResource: "test.MOV", withExtension: nil) else {
-            fatalError("Couldn't find test.mov in main bundle.")
+        let videoFileName = video.fileName
+        guard let url = Bundle.main.url(forResource: videoFileName, withExtension: nil) else {
+            fatalError("Couldn't find \(videoFileName) in main bundle.")
         }
         let controller = model.makePlayerViewController(videoURL : url)
 

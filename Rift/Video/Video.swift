@@ -10,6 +10,8 @@ import UIKit
 
 struct Video: Identifiable, Hashable, Codable {
     
+    let fileName: String
+    
     /// The unique identifier of the item.
     let id: Int
     /// The URL of the video, which can be local or remote.

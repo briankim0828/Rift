@@ -19,7 +19,7 @@ struct RiftApp: App {
             ContentView()
                 .environment(PlayerModel())
                 .environment(VideoLibrary())
-                .background(Color.white.opacity(0.33))
+                .background(Color.white.opacity(0.45))
         }
 
 #if os(macOS)
